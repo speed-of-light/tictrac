@@ -266,7 +266,7 @@ module.exports = (grunt) ->
     ngtemplates:
       options:
         # This should be the name of your apps angular module
-        module: "brasFeApp"
+        module: "ticTrac"
         htmlmin:
           collapseBooleanAttributes: true
           collapseWhitespace: true

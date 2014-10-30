@@ -1,0 +1,30 @@
+header#header
+  h1
+    a(href='#', title='Tictrac') Tictrac
+  nav
+    a.toggle(href='#', title='Toggle Navigation') Toggle Navigation
+    ul
+      li
+        a(href="" ng-click="toggle_date()") Toggle Date
+      li
+        a(href='#') Item 2
+      li
+        a(href='#') Item 3
+      li
+        a(href='#') Item 4
+
+section#content
+  // Content goes here
+  ul.tweets
+    li.tweet(ng-repeat="tweet in data.tweets")
+      .avatar
+        img(src="{{ tweet.user.profile_background_image_url }}")
+      .info
+        a(href="https://twitter.com/{{tweet.user.name}}")
+          ._name {{ tweet.user.name }}
+          ._screenname @{{ tweet.user.screen_name }}
+        ._text {{ tweet.text }}
+        ._date
+          span(ng-show="data.option.timeago") {{ fromNow(tweet.created_at) }}
+          span(ng-hide="data.option.timeago") {{ tweet.created_at | amDateFormat:'dddd MMMM YYYY' }}
+
