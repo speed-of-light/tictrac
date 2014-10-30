@@ -64,7 +64,7 @@ body {
     font-size: 12px;
     line-height: 18px;
     color: #555;
-    background: #EEE url('../images/bg-tile.png') repeat-x;
+    background: #EEE url('/assets/images/bg-tile.png') repeat-x;
 }
 
 /* 3. Layout */
@@ -91,7 +91,7 @@ body {
     position: absolute;
     top: 33px;
     left: 20px;
-    background: transparent url('../images/logo.png') no-repeat 50% 50%;
+    background: transparent url('/assets/images/logo.png') no-repeat 50% 50%;
     width: 133px;
     height: 34px;
     text-indent: -999px;
@@ -102,7 +102,7 @@ body {
     position: absolute;
     top: 41px;
     right: 20px;
-    background: transparent url('../images/menu-toggle.png') no-repeat 50% 50%;
+    background: transparent url('/assets/images/menu-toggle.png') no-repeat 50% 50%;
     width: 30px;
     height: 17px;
     text-indent: -999px;
@@ -213,12 +213,12 @@ body {
        all and (min-device-pixel-ratio: 2) {
 
     #header h1 a {
-        background-image: url('../images/logo-2x.png');
+        background-image: url('/assets/images/logo-2x.png');
         background-size: 133px 34px;
     }
 
     #header nav .toggle {
-        background-image: url('../images/menu-toggle-2x.png');
+        background-image: url('/assets/images/menu-toggle-2x.png');
         background-size: 30px 17px;
     }
 

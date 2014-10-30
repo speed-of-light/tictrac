@@ -18,7 +18,8 @@
     "angular-classy": "~0.4.2",
     "angular-animate": "~1.2.23",
     "angular-local-storage": "~0.0.7",
-    "moment": "~2.8.3"
+    "moment": "~2.8.3",
+    "angular-moment": "~0.8.2"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
